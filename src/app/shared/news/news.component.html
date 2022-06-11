@@ -1,0 +1,18 @@
+<section id="news">
+  <app-header></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="rectangle">
+         <app-post-card *ngFor="let post of searchService.posts" [item]="post"></app-post-card>
+        </div>
+        <button (click)="open(addPostModal)">Добавить</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ng-template #addPostModal let-modal>
+  <app-addpost></app-addpost>
+</ng-template>
+

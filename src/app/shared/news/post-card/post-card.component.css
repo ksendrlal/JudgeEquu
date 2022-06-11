@@ -1,0 +1,78 @@
+.card {
+  height: 170px;
+  width: 370px;
+  margin-left: 43px;
+  margin-top: 37px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  float: left;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 16px;
+  float: top;
+}
+
+.card-text {
+  float: right;
+  width: 222px;
+  height: 94px;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.button__read {
+  width: 65px;
+  height: 20px;
+  background: #525B9F;
+  border-radius: 5px 0px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  padding: 5px;
+  color: #FFFFFF;
+  float: right;
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+  top: 139px;
+  border: 0;
+}
+
+.card-body {
+  position: relative;
+}
+
+.modalbackground {
+  background-color: #FFFFFF;
+}
+
+.modalbackground img{
+  max-height: 500px;
+  max-width: 500px;
+  text-align: center;
+  margin:auto;
+  display: block;
+}
+
+.modalbackground h3 {
+  float: top;
+  text-align: center;
+}
+
+.modalbackground p {
+  float: right;
+  font-family: Kraskario;
+}
+
+.content{
+  padding-top: 30px;
+  position: absolute;
+  max-width: 1300px;
+  left: 100px;
+}

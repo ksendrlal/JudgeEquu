@@ -1,0 +1,17 @@
+#calendar {
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("../../../assets/pictures/shared/calendarBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.rectangle {
+  width: 1120px;
+  height: 750px;
+  background: rgba(76, 92, 212, 0.4);
+  border-radius: 25px 0px;
+  margin-top: 174px;
+  position: relative;
+  overflow-y: scroll;
+}
+

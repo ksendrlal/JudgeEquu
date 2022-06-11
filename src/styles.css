@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+/* USER VARIABLES SECTION */
+:root {
+  --accent: #F6E22B;
+  --text: #fff;
+  --dark: #000;
+  --regular-text: 16px;
+  --line-height: 19px;
+  --userfont: CimeroPro, sans-serif;
+}
+
+/* BOOTSTRAP SETTINGS */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .5rem; }
+.row, .row > * { --bs-gutter-x: 1rem; }
+
+/* FONTS LOAD SECTION */
+@font-face {
+  src: url(assets/fonts/CimeroPro.otf) format("truetype");
+  font-family: "CimeroPro";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(assets/fonts/Kraskario.ttf) format("truetype");
+  font-family: "Kraskario";
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* GENERAL CSS SETTINGS */
+input { outline: none; }
+input:focus:required:invalid { border: 2px red; }
+
+body{
+  font-family: var(--userfont);
+  font-size: var(--regular-text);
+  line-height: var(--line-height);
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--text);
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1000px) {
+  .container{
+    max-width: 1366px;
+    padding: 0;
+  }
+}

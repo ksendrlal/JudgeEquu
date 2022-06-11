@@ -1,0 +1,42 @@
+<section id="registartion">
+  <app-header></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="switcher">
+          <button class="switch" type="button" [ngClass]="registrationSwitcherValue ? 'button__changedcolor': 'button__defaultcolor'" (click)="execRiderRegistration()">Всадник</button>
+          <button class="switch" type="button" [ngClass]="registrationSwitcherValue ? 'button__defaultcolor': 'button__changedcolor'" (click)="execJudgeRegistration()">Судья</button>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="background__registration" [ngClass]="registrationSwitcherValue ? 'registration__window__judge' : 'registration__window__rider'">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group col-7">
+              <label for="input1">Фамилия</label>
+              <input type="input" id="input1" placeholder="Введите фамилию" formControlName="surname">
+            </div>
+            <div class="form-group col-7">
+              <label for="input2">Имя</label>
+              <input type="input" id="input2" placeholder="Введите имя" formControlName="name">
+            </div>
+            <div class="form-group col-7">
+              <label for="input4">Отчество</label>
+              <input type="input" id="input4" placeholder="Введите отчество" formControlName="patronymic">
+            </div>
+            <div class="form-group col-7">
+              <label for="input5">Дата рождения</label>
+              <input type="input" id="input5" formControlName="dateofbirth">
+            </div>
+            <div class="form-group col-7" *ngIf="registrationSwitcherValue">
+              <label for="input6">Категория</label>
+              <input type="input" id="input6" placeholder="Введите категорию" formControlName="category">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <button id="button__registration" [disabled]="form.invalid" >Зарегистрировать</button>
+      </div>
+    </div>
+  </div>
+</section>
