@@ -5,6 +5,7 @@ import {HomeComponent} from "./shared/home/home.component";
 import {NewsComponent} from "./shared/news/news.component";
 import {CreatecompetitionComponent} from "./components/admin/createcompetition/createcompetition.component";
 import {CalendarComponent} from "./shared/calendar/calendar.component";
+import {DressageComponent} from "./components/admin/dressage/dressage.component";
 
 
 const routes: Routes = [
@@ -27,11 +28,11 @@ const routes: Routes = [
   {
     path: 'calendar',
     component: CalendarComponent
-  }
-/*  {
+  },
+  {
     path: 'dressage',
     component: DressageComponent
-  }*/
+  }
 ];
 
 @NgModule({

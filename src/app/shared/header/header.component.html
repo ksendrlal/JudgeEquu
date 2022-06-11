@@ -7,6 +7,14 @@
           <a href="#">JudgEqu</a>
         </div>
       </div>
+      <div class="col-lg-5">
+          <a href="/calendar" class="menu__item">Главная</a>
+          <a href="/registration" class="menu__item">Регистрация</a>
+          <a href="/news" class="menu__item">Новости</a>
+      </div>
+      <div class="col-lg-3">
+          <button *ngIf="(riderService.isAuth) || (judgeService.isAuth)" (click)="onLogOut()">Выйти из аккаунта</button>
+      </div>
     </div>
   </div>
 </div>

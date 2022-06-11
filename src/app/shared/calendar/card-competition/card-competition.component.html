@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{item.title}}</h5>
+    <img [src]="item.image" class="card-img">
+    <p class="card-text">{{item.description}}</p>
+    <button class="button__read" (click)="openLg(content)">Читать</button>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-body modalbackground">
+    <img [src]="item.image" alt="Card image cap" />
+  </div>
+  <div class="modalbackground">
+    <h3>{{ item.title }}</h3>
+    <p style="padding-left: 20px; padding-right: 20px; font-size: 20px"> {{ item.text }} </p>
+  </div>
+</ng-template>

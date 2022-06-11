@@ -1,0 +1,8 @@
+#registartion {
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("../../../../assets/pictures/judge/BackgroundDressage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}

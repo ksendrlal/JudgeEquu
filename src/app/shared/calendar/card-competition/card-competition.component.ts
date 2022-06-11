@@ -1,31 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import {Post} from "../../models/post.model";
-import {Router} from "@angular/router";
-import {SearchService} from "../../services/search.service";
+import {Component, Input, OnInit} from '@angular/core';
+import {Post} from "../../../models/post.model";
+import {Competition} from "../../../models/competition.model";
 import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {Competition} from "../../models/competition.model";
-import {SeachCompService} from "../../services/seach-comp.service";
+import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-calendar',
-  templateUrl: './calendar.component.html',
-  styleUrls: ['./calendar.component.css']
+  selector: 'app-card-competition',
+  templateUrl: './card-competition.component.html',
+  styleUrls: ['./card-competition.component.css']
 })
-export class CalendarComponent implements OnInit {
+export class CardCompetitionComponent implements OnInit {
 
+  @Input() item: any;
   closeResult: any;
-
   competitions: Competition[] = [];
-  constructor(
-    private router: Router,
-    public searchService: SeachCompService,
-    private modalService: NgbModal
-  ) {}
 
-  ngOnInit(){
-    this.searchService.getAllDefault();
-  }
-
+  constructor(private modalService: NgbModal,
+              private router: Router) { }
   open(content: any) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
@@ -47,4 +38,7 @@ export class CalendarComponent implements OnInit {
       return  `with: ${reason}`;
     }
   }
+  ngOnInit(): void {
+  }
+
 }

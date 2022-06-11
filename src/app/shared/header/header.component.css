@@ -14,3 +14,39 @@ a {
   height: 39px;
   margin-top: 25px;
 }
+
+button {
+  text-decoration: none;
+  border: 0;
+  width: 186px;
+  height: 40px;
+  background: #525B9F;
+  border-radius: 5px 0px;
+  line-height: 14px;
+  padding: 7px;
+  color: #FFFFFF;
+  margin-top: 25px;
+  margin-left: 420px;
+  font-size: 16px;
+}
+
+.menu {
+  margin-top: 35px;
+  margin-left: 320px;
+}
+.menu__item {
+  display:inline-block;
+  padding-top: 40px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.menu__item:hover {
+  max-width: 183px;
+  height: 35px;
+  padding: 7px;
+  background: rgba(151, 161, 234, 0.3);
+  border-radius: 5px 0px;
+}

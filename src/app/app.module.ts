@@ -14,8 +14,11 @@ import {HttpClientModule} from "@angular/common/http";
 import { PostCardComponent } from './shared/news/post-card/post-card.component';
 import { AddpostComponent } from './components/admin/addpost/addpost.component';
 import { CreatecompetitionComponent } from './components/admin/createcompetition/createcompetition.component';
-import { AdminhomeComponent } from './components/admin/adminhome/adminhome.component';
 import { CalendarComponent } from './shared/calendar/calendar.component';
+import { AddcompetitionComponent } from './components/admin/addcompetition/addcompetition.component';
+import { CardCompetitionComponent } from './shared/calendar/card-competition/card-competition.component';
+import { ShowjumpingComponent } from './components/admin/showjumping/showjumping.component';
+import { DressageComponent } from './components/admin/dressage/dressage.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +30,11 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     PostCardComponent,
     AddpostComponent,
     CreatecompetitionComponent,
-    AdminhomeComponent,
-    CalendarComponent
+    CalendarComponent,
+    AddcompetitionComponent,
+    CardCompetitionComponent,
+    ShowjumpingComponent,
+    DressageComponent
   ],
     imports: [
         BrowserModule,

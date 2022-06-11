@@ -23,4 +23,13 @@ export class RiderStateService {
     }
   }
 
+  logout(): void {
+    window.localStorage.removeItem('judge');
+    let rider = null;
+  }
+
+  public isAuth(): boolean {
+    return this.rider != null;
+  }
+
 }

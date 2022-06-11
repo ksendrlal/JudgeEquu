@@ -52,10 +52,9 @@ label {
   line-height: 16px;
   color: #FFFFFF;
   border: 0;
-  float: right;
   position: relative;
   margin-top: 17px;
-
+  margin-left: 295px;
 }
 
 .switch {
@@ -79,14 +78,14 @@ label {
 
 .registration__window__rider {
   width: 540px;
-  height: 350px;
+  height: 380px;
   background: rgba(82, 91, 159, 0.4);
   border-radius: 55px 0;
 }
 
 .registration__window__judge {
   width: 540px;
-  height: 430px;
+  height: 460px;
   background: rgba(82, 91, 159, 0.4);
   border-radius: 55px 0;
 }

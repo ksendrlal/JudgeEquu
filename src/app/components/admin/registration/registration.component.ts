@@ -23,6 +23,7 @@ export class RegistrationComponent implements OnInit {
       name: new FormControl ('', [Validators.required, Validators.minLength(2)]),
       surname: new FormControl ('', [Validators.required, Validators.minLength(2)]),
       patronymic: new FormControl ('', [Validators.required, Validators.minLength(3)]),
+      category: new FormControl('', [Validators.required]),
       dateofbirth: new FormControl ('', Validators.required),
       login: new FormControl(this.generateLogin(6)),
       password: new FormControl (this.generatePassword(6))
@@ -30,9 +31,16 @@ export class RegistrationComponent implements OnInit {
   }
 
   onSubmit() {
-    this.authService.register(this.form.value).subscribe(response => {
+    if(this.registrationSwitcherValue === false) {
+      this.authService.registerRider(this.form.value).subscribe(response => {
       console.log(response);
     });
+    }
+    else {
+      this.authService.registerJudge(this.form.value).subscribe(response => {
+        console.log(response);
+      })
+    }
   }
 
   execRiderRegistration(): void {
