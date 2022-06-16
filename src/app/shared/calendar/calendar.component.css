@@ -26,3 +26,26 @@
   background: rgba(82, 91, 159, 0.8);
   border-radius: 22px;
 }
+
+.cards {
+  min-width: 1020px;
+  display: inline-block;
+}
+
+.add {
+  width: 145px;
+  height: 40px;
+  background: #525B9F;
+  border-radius: 5px 0px;
+  font-size: 20px;
+  line-height: 14px;
+  text-align: center;
+  padding: 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+  right: 15px;
+  top: 139px;
+  border: 0;
+  margin-top: 10px;
+  margin-left: 1235px;
+}

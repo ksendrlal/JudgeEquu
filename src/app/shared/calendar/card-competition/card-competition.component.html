@@ -1,18 +1,34 @@
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">{{item.title}}</h5>
-    <img [src]="item.image" class="card-img">
-    <p class="card-text">{{item.description}}</p>
-    <button class="button__read" (click)="openLg(content)">Читать</button>
+    <h5 class="card-title">{{item.date}}</h5>
+    <p>{{item.category}}</p>
+    <button class="button__read" (click)="openLg(content)">Подбробнее</button>
   </div>
 </div>
 
 <ng-template #content let-modal>
-  <div class="modal-body modalbackground">
-    <img [src]="item.image" alt="Card image cap" />
-  </div>
   <div class="modalbackground">
-    <h3>{{ item.title }}</h3>
-    <p style="padding-left: 20px; padding-right: 20px; font-size: 20px"> {{ item.text }} </p>
+    <h3>{{ item.date }}</h3>
+    <p style="font-size: 20px"> {{ item.category }} </p>
+    <p> Судья: Султанов Дмитрий Анатольевич</p>
+    <div class="switcher">
+      <button class="switch" type="button" [ngClass]="registrationSwitcherValue ? 'button__changedcolor': 'button__defaultcolor'" (click)="execRiderRegistration()">Маршрут 1</button>
+      <button class="switch" type="button" [ngClass]="registrationSwitcherValue ? 'button__defaultcolor': 'button__changedcolor'" (click)="execJudgeRegistration()">Маршрут 2</button>
+      <button class="switch" type="button" [ngClass]="registrationSwitcherValue ? 'button__defaultcolor': 'button__changedcolor'" (click)="execJudgeRegistration()">Маршрут 3</button>
+    </div>
+    <table>
+      <tr><th>Всадник</th><th>Лошадь</th></tr> <!--ряд с ячейками заголовков-->
+      <tr><td><p href="#">Кулагина Ксения Андреевна</p></td>
+        <td><p>Листопад</p></td></tr> <!--ряд с ячейками тела таблицы-->
+      <tr><td><p href="#">Тухкина Анастасия Сергеевна</p></td>
+        <td><p>Туман</p></td></tr> <!--ряд с ячейками тела таблицы-->
+      <tr><td><p href="#">Поливцева Елизавета Андреевна</p></td>
+        <td><p>Баталия</p></td></tr> <!--ряд с ячейками тела таблицы-->
+      <tr><td><p href="#">Чернышева Анастасия Павловна</p></td>
+        <td><p>Бэста</p></td></tr> <!--ряд с ячейками тела таблицы-->
+      <tr><td><p href="#">Рубе Арина Сергеевна</p></td>
+        <td><p>Гром</p></td></tr> <!--ряд с ячейками тела таблицы-->
+    </table>
+    <button class="write">Печать</button>
   </div>
 </ng-template>

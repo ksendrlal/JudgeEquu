@@ -1,0 +1,259 @@
+#showjumping {
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("../../../../assets/pictures/judge/backgoundShow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.rectangle {
+  width: 360px;
+  height: 717px;
+  background: rgba(76, 92, 212, 0.4);
+  border-radius: 25px 0px;
+  margin-top: 33px;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.rectangle::-webkit-scrollbar {
+  width: 9px;   /* ширина scrollbar */
+}
+
+.rectangle::-webkit-scrollbar-track {
+  background: transparent;        /* цвет дорожки */
+}
+.rectangle::-webkit-scrollbar-thumb {
+  background: rgba(82, 91, 159, 0.8);
+  border-radius: 22px;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+  float: left;
+  width: 170px;
+  margin-left: 38px;
+}
+
+input {
+  width: 59px;
+  height: 35px;
+  margin-right: 15px;
+  float: right;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.head {
+  margin-top: 18px;
+}
+
+.inp {
+  margin-top: 10px;
+}
+
+.head p {
+  color: black;
+  font-size: 20px;
+  width: 70px;
+}
+
+.text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#mark {
+  margin-left: 170px;
+}
+
+#judge__block {
+  width: 265px;
+  height: 52px;
+}
+
+#judge {
+  font-size: 20px;
+  margin-left: 38px;
+}
+
+#fio {
+  display: block;
+  width: 265px;
+  height: 32px;
+  background: white;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+}
+
+#arena {
+  width: 265px;
+  height: 52px;
+}
+
+#text {
+  width: 84px;
+  height: 28px;
+  font-size: 13px;
+  line-height: 13px;
+  color: black;
+}
+
+#rec {
+  width: 170px;
+  height: 28px;
+  background: white;
+  border-radius: 5px;
+  font-size: 13px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  margin-left: 132px;
+  margin-top: -45px;
+}
+
+#rider {
+  width: 120px;
+  height: 52px;
+}
+
+#rider h2 {
+  font-size: 20px;
+  margin-left: 38px;
+}
+
+#horse {
+  width: 120px;
+  height: 52px;
+  margin-left: 140px;
+  margin-top: -40px;
+}
+
+#horse h2 {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.kek {
+  width: 120px;
+  height: 32px;
+  background: white;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+}
+
+.keks {
+  width: 120px;
+  height: 32px;
+  background: white;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  margin-top: -48px;
+}
+
+
+#shema {
+  width: 265px;
+  height: 52px;
+}
+
+#shem {
+  width: 265px;
+  height: 32px;
+  background: white;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+}
+
+#shema h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 38px;
+}
+
+#butt__ick {
+  width: 151px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  background: #525B9F;
+  border-radius: 5px 0px;
+  border: 0;
+  margin-top: 250px;
+  margin-left: -190px;
+}
+
+.rectangle__small {
+  width: 550px;
+  height: 200px;
+  background: rgba(151, 161, 234, 0.8);
+  border-radius: 10px 0px;
+  margin-top: -200px;
+  margin-left: 820px;
+  overflow-y: scroll;
+}
+
+.rectangle__small::-webkit-scrollbar {
+  width: 9px;   /* ширина scrollbar */
+}
+
+.rectangle__small::-webkit-scrollbar-track {
+  background: transparent;        /* цвет дорожки */
+}
+.rectangle__small::-webkit-scrollbar-thumb {
+  background: rgba(82, 91, 159, 0.8);
+  border-radius: 22px;
+}
+
+.headi {
+  margin-top: 18px;
+  margin-left: 1270px;
+}
+
+#marki {
+  margin-left: 180px;
+}
+
+.headi p {
+  color: black;
+  font-size: 20px;
+  width: 150px;
+}
+.texti {
+  margin-top: 20px;
+  margin-left: -149px;
+}
+#ino__t {
+  width: 100px;
+  margin-left: 1270px;
+}
+
+#add {
+  width: 151px;
+  height: 33px;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+  background: #525B9F;
+  border-radius: 5px 0px;
+  border: 0;
+  margin-top: 10px;
+  margin-left: 1218px;
+}

@@ -8,7 +8,7 @@ import {NumKP} from "../models/num-k-p.model";
 @Injectable({
   providedIn: 'root'
 })
-export class SearchService {
+export class NumKPStateService {
   public numbersKP: NumKP[] = [];
   constructor(private http: HttpClient) { }
   getAllDefault() {

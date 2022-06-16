@@ -12,4 +12,8 @@ export class ShowjumpingComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ick() {
+    alert("Всадник исключён с соревнований");
+  }
+
 }

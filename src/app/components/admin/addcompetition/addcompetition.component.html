@@ -9,22 +9,41 @@
         id="input1"
       />
       <label>Категория</label>
-      <p><select name="hero">
+      <p><select name="hero" class="default">
         <option value="s1">Конкур</option>
         <option value="s2" selected>Выездка</option>
-      </select>
-        <input type="submit" value="Отправить"></p>
-      <label class="textarea">Описание</label>
-      <textarea
+      </select></p>
+      <label for="input2">Количество барьеров</label>
+      <input
         formControlName="description"
-        placeholder="Описание"
-        type="text" style="height: 100px;"></textarea>
-      <label class="textarea" id="textarea">Новость</label>
-      <textarea
-        formControlName="text"
-        placeholder="Новость"
-        type="text"></textarea>
-      <button class="button__add" type="submit">Добавить новость</button>
+        placeholder="Количество барьеров"
+        type="text"
+        id="input2"/>
+      <label class="textarea" id="textarea">Судья</label>
+      <p><select name="judge" class="default">
+        <option value="s1">Султанов Дмитрий Анатольевич</option>
+        <option value="s2">Максимова Дарья Викторовна</option>
+        <option value="s3">Михалкова Рината Дмитриевна</option>
+      </select></p>
+      <table>
+        <tr><th>Всадник</th><th>Лошадь</th></tr> <!--ряд с ячейками заголовков-->
+        <tr><td><p><select name="judge" class="table__riders">
+          <option value="s1">Кулагина Ксения Андреевна</option>
+          <option value="s2">Максимова Дарья Викторовна</option>
+          <option value="s3">Михалкова Рината Дмитриевна</option>
+        </select></td>
+          <td><input
+          formControlName="description"
+          placeholder="Имя лошади"
+          type="text"
+          class="table__rider"
+          /></td></tr> <!--ряд с ячейками тела таблицы-->
+      <button class="write">Печать логинов и паролей</button>
+      </table>
+      <button class="button__add" type="submit">Добавить пару</button>
+      <div class="create">
+        <button class="button__create" type="submit">Создать</button>
+      </div>
     </form>
   </div>
 </div>

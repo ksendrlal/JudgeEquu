@@ -14,6 +14,7 @@ export class CardCompetitionComponent implements OnInit {
   @Input() item: any;
   closeResult: any;
   competitions: Competition[] = [];
+  registrationSwitcherValue: boolean = false;
 
   constructor(private modalService: NgbModal,
               private router: Router) { }
@@ -40,5 +41,14 @@ export class CardCompetitionComponent implements OnInit {
   }
   ngOnInit(): void {
   }
+
+  execRiderRegistration(): void {
+    this.registrationSwitcherValue = false;
+  }
+
+  execJudgeRegistration(): void {
+    this.registrationSwitcherValue = true;
+  }
+
 
 }

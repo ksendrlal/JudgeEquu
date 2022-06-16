@@ -13,7 +13,6 @@ import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
 import { PostCardComponent } from './shared/news/post-card/post-card.component';
 import { AddpostComponent } from './components/admin/addpost/addpost.component';
-import { CreatecompetitionComponent } from './components/admin/createcompetition/createcompetition.component';
 import { CalendarComponent } from './shared/calendar/calendar.component';
 import { AddcompetitionComponent } from './components/admin/addcompetition/addcompetition.component';
 import { CardCompetitionComponent } from './shared/calendar/card-competition/card-competition.component';
@@ -29,7 +28,6 @@ import { DressageComponent } from './components/admin/dressage/dressage.componen
     NewsComponent,
     PostCardComponent,
     AddpostComponent,
-    CreatecompetitionComponent,
     CalendarComponent,
     AddcompetitionComponent,
     CardCompetitionComponent,

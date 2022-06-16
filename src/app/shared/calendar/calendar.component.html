@@ -3,9 +3,11 @@
   <div class="container">
     <div class="row">
       <div class="rectangle">
-        <app-post-card *ngFor="let post of searchService.competitions" [item]="post"></app-post-card>
+        <div class="cards">
+          <app-card-competition *ngFor="let competition of searchService.competitions" [item]="competition"></app-card-competition>
+        </div>
       </div>
-      <button (click)="open(addCompetitionModal)">Добавить</button>
+      <button (click)="open(addCompetitionModal)" class="add">Добавить</button>
     </div>
   </div>
 </section>

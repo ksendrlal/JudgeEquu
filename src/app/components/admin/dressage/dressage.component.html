@@ -1,7 +1,55 @@
 <section id="dressage">
+  <app-header></app-header>
   <div class="container">
     <div class="row">
+      <div class="col-lg-6">
+        <div class="rectangle">
+          <div class="head">
+            <p>Упражнение</p>
+            <p id="mark">Оценка</p>
+          </div>
+          <div class="num__dressage" *ngFor="let item of this.numKP.numbersKP">
+            <p class="text">{{item.name}}</p>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div id="judge__block">
+          <h2 id="judge">Судья</h2>
+          <p id="fio">Султанов Дмитрий Анатольевич</p>
+        </div>
+        <div id="arena">
+          <p id="text">Положение на арене</p>
+          <p id="rec">A</p>
+        </div>
+        <div id="rider">
+          <h2>Всадник</h2>
+          <p class="kek">Кулагина</p>
+        </div>
+        <div id="horse">
+          <h2>Лошадь</h2>
+          <p class="keks">Листопад</p>
+        </div>
+        <div id="shema">
+          <h2>Езда</h2>
+          <p id="shem">Личный приз</p>
+        </div>
+      </div>
+      <button id="butt__ick">Всадник исключён</button>
 
+      <div class="rectangle__small">
+        <div class="headi">
+          <p>Общее впечатление</p>
+          <p id="marki">Оценка</p>
+        </div>
+        <div class="num__op">
+          <p class="texti">Общее впечатление (гармоничное представление пары всадник/лошадь; положение и посадка всадника; корректность и эффективность применения средств управления) </p>
+          <input type="text" id="ino__t">
+        </div>
+      </div>
+
+      <button id="add">Отправить</button>
     </div>
   </div>
 </section>

@@ -1,0 +1,89 @@
+.card {
+  height: 170px;
+  width: 270px;
+  margin-left: 55px;
+  margin-top: 37px;
+  float: left;
+}
+
+.button__read {
+  width: 105px;
+  height: 20px;
+  background: #525B9F;
+  border-radius: 5px 0px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  padding: 5px;
+  color: #FFFFFF;
+  float: right;
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+  top: 139px;
+  border: 0;
+}
+
+.button__changedcolor {
+  background: rgba(82, 91, 159, 0.8);
+  width: 116px;
+  height: 25px;
+  border-radius: 10px 0px;
+  border: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-right: 50px;
+}
+
+.button__defaultcolor {
+  background: #525B9F;
+  width: 116px;
+  height: 25px;
+  border-radius: 10px 0px;
+  border: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-right: 50px;
+}
+
+.switcher {
+  width: 270px;
+  margin-top: 15px;
+  position: relative;
+  white-space: nowrap;
+  margin-left: 180px;
+}
+
+table {
+  width: 400px;
+  margin-top: 15px;
+  margin-left: 200px;
+  background: rgba(82, 91, 159, 0.4);
+  padding: 10px;
+  border: 1px solid black;
+}
+table p {
+  font-family: Kraskario;
+  font-size: 20px;
+}
+
+.write {
+  width: 105px;
+  height: 20px;
+  background: #525B9F;
+  border-radius: 5px 0px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  padding: 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+  right: 15px;
+  top: 139px;
+  border: 0;
+  margin-left: 350px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
